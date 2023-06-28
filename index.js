@@ -1,5 +1,6 @@
 const youtubedl = require("youtube-dl");
 const TelegramBot = require("node-telegram-bot-api");
+require('dotenv').config();
 
 // Create a bot that uses 'polling' to fetch new updates
 const bot = new TelegramBot(process.env.TOKEN_TELEGRAM_BOT, {
